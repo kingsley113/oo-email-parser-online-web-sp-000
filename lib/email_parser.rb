@@ -5,6 +5,11 @@
 require 'pry'
 
 class EmailAddressParser
+  def initialize
+    @emails = self
+  end
+
+
   def parse
     binding.pry
     @emails = self.split(" ")
