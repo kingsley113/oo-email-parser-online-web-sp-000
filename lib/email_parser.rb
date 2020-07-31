@@ -17,7 +17,7 @@ class EmailAddressParser
     @parsed_emails = @emails.split(/\s|(,)/)
     @parsed_emails.delete("")
     @parsed_emails.delete(",")
-    @parsed_emails
+    @parsed_emails.uniq!
     # binding.pry
   end
 
