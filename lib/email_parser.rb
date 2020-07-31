@@ -18,6 +18,7 @@ class EmailAddressParser
     @parsed_emails.delete("")
     @parsed_emails.delete(",")
     @parsed_emails.uniq!
+    @parsed_emails
     # binding.pry
   end
 
