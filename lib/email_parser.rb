@@ -8,5 +8,6 @@ class EmailAddressParser
   def self.parse
     @emails = self.split(" ", ",")
     binding.pry
+  end
 
 end
