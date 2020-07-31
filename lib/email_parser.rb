@@ -13,7 +13,8 @@ class EmailAddressParser
 
   def parse
     binding.pry
-    @emails = @emails.split(/\s | (,)/)
+    # @emails = @emails.split(/\s | (,)/)
+    @emails = @emails.split(",")
     @emails.delete(" " || ",")
     # binding.pry
   end
