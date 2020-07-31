@@ -12,14 +12,11 @@ class EmailAddressParser
 
 
   def parse
-    # binding.pry
-    # @emails = @emails.split(/\s | (,)/)
     @parsed_emails = @emails.split(/\s|(,)/)
     @parsed_emails.delete("")
     @parsed_emails.delete(",")
     @parsed_emails.uniq!
     @parsed_emails
-    # binding.pry
   end
 
 end
