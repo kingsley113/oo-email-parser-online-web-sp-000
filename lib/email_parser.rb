@@ -7,11 +7,11 @@ require 'pry'
 class EmailAddressParser
   def initialize(emails)
     @emails = emails
-
+    parse
   end
 
 
-  def self.parse
+  def parse
     # binding.pry
     # @emails = @emails.split(/\s | (,)/)
     @emails = @emails.split(",")
