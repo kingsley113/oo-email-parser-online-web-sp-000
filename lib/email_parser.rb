@@ -7,7 +7,7 @@ require 'pry'
 class EmailAddressParser
   def initialize(emails)
     @emails = emails
-    self.parse
+
   end
 
 
